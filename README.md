@@ -44,7 +44,16 @@ The default setting is as below:
 The height of the tree is target,because in the worest case the target could be consist only number one.And for each tree node, it will have the length of the array's branches
 so the  time and space complexity will be like below:
 
-time: O(n_m) represent: each tree node has n branches and the depth of the tree is m
+time: O(n^m) represent: each tree node has n branches and the depth of the tree is m
 space :O(m) because it's a recursive method and each time it only takes m space
 ![](res/2021-01-18-16-54-58.png)
 
+memorized:
+![](res/2021-01-18-17-05-49.png)
+
+# 5. howSum
+![](res/2021-01-18-17-06-15.png)
+
+# 6. bestSum
+ ![](res/2021-01-18-22-00-40.png)
+ 

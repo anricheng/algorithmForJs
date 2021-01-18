@@ -14,7 +14,7 @@ const howSum = (target,array) =>{
   console.log(howSum(100,[2,3])) 
 
   // Brute Force 
-  //time:O(n^m * m)
+  //time:O(n^m * m)  m is target and n is the length of array
   //space: O(m)
   
 
@@ -37,5 +37,6 @@ const howSum = (target,array) =>{
   
   console.log(howSumWithMemo(100,[3,4])) 
   // memorized
-  //time:
-  //space:
+  //time: O(n*m^2)
+  //space:O(m)
+  
