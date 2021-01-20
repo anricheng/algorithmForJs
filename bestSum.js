@@ -48,3 +48,21 @@ const bestSum = (target,array) =>{
   //time: O(n*m^2)
   //space:O(m^2)
   
+  const bestSumWithArray = (target,inputArray) =>{
+    const array = Array(target+1).fill(null)
+    array[0] = []
+    for(let i=0;i<target;i++){
+      if(array[i]!=null){
+        for(let item of inputArray){
+          array[i+item]
+          const temp=[item,...array[i]]
+          if (array[i+item] == null || array[i+item].length>temp.length) {
+            array[i+item]=temp;
+          }
+        }
+      }
+    }
+    return array[target]
+  }
+
+  console.log(bestSumWithMemo(100,[1,2,5,25])) 

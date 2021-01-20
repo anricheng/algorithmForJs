@@ -56,4 +56,11 @@ memorized:
 
 # 6. bestSum
  ![](res/2021-01-18-22-00-40.png)
- 
+ ![](res/2021-01-19-07-56-05.png)
+
+ # 7.canConstruct
+ ![](res/2021-01-19-07-57-30.png)
+
+ # 8.fibnacci with Array:
+ ![](res/2021-01-20-13-32-12.png)
+ ![](res/2021-01-20-13-33-04.png)

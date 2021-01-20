@@ -13,13 +13,14 @@ const canConstruct = (target,array) =>{
     return false;
 }
 
-//console.log("canConstruct start:")
+console.log("canConstruct start:")
 
-//console.log(canConstruct("abcdefg",["ab","abc","cd","defg","abcd"]))
+console.log(canConstruct("abcdefg",["ab","abc","cd","defg","abcd"]))
 
 //console.log(canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ee","eee","eeee","eeeeee"]))
-//console.log("canConstruct end:")
-
+console.log("canConstruct end:")
+// brute force
+// O()
 
 
 const canConstructWithMemo = (target,array,memo={}) =>{
@@ -45,3 +46,4 @@ console.log("canConstructWithMemo start:")
 console.log(canConstructWithMemo("abcdefg",["ab","abc","cd","defg","abcd"]))
 console.log(canConstructWithMemo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ee","eee","eeee","eeeeee"]))
 console.log("canConstructWithMemo end:")
+

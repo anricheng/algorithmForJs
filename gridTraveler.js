@@ -30,3 +30,20 @@ console.log(gridTraveler(4,5))
 
 console.log(gridTravelerWithMemo(18,18))
 console.log(gridTravelerWithMemo(18,18))
+
+const gridTravelerWithArray = (m,n) =>{
+    const arrays= Array(m).fill().map(()=>Array(n).fill(0));
+    arrays[0][0]=1;
+    for(let i=0;i<m;i++){
+        for(let j=0;j<n;j++){
+            if(i+1<m)  arrays[i+1][j] += arrays[i][j];
+           
+            if(j+1<n) arrays[i][j+1] += arrays[i][j];
+        }
+    }
+
+    return arrays[m-1][n-1];
+
+}
+
+console.log(gridTravelerWithArray(18,18))
